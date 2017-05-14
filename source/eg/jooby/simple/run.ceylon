@@ -11,7 +11,7 @@ import org.jooby {
 
 class App() extends Jooby() {
 //    get("/", () => "Hello World!");
-    get("/",
+    get("/", "/:name",
         (req, res) {
             value name = req.param("name").string("World");
             value html = Html {
