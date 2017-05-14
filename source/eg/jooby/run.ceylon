@@ -3,18 +3,22 @@ import ceylon.html {
 }
 
 import org.jooby {
-    Jooby
+    Jooby,
+    Mutant {
+        string=\ivalue
+    }
 }
 
 class App() extends Jooby() {
 //    get("/", () => "Hello World!");
     get("/",
         (req, res) {
+            value name = req.param("name").string("World");
             value html = Html {
-                Head { title="Hello World!"; },
+                Head { title = "Hello ``name``!"; },
                 Body {
                     P {
-                        Strong { "Hello World!" }
+                        Strong { "Hello ``name``!" }
                     }
                 }
             };
