@@ -1,6 +1,5 @@
 /.exploded/
 /bin/
-/eg.jooby-1.0.0.cas
-/eg.jooby-1.0.0.jar
+/eg.jooby*-1.0.0.*
 .DS_Store
 /modules/

@@ -27,16 +27,31 @@ Ceylon IDE, or, in this directory, type:
 
 To run the Hello World example, in this directory, type:
 
-    ./ceylonb run eg.jooby
+    ./ceylonb run eg.jooby.simple
 
 And go to <http://localhost:8080>.
+
+To run the REST example, in this directory, type:
+
+    ./ceylonb run eg.jooby.rest
+
+And go to <http://localhost:8080/mvc/greeting/Trompon>.
 
 ## Assembling and running a fat jar
 
 To assemble a "fat" jar, in this directory, type:
 
-    ./ceylonb fat-jar --force eg.jooby
+    ./ceylonb fat-jar --force eg.jooby.simple
+
+Or:
+
+    ./ceylonb fat-jar --force eg.jooby.rest
 
 Then, to run the resulting jar with `java`, type:
 
-    java -jar eg.jooby-1.0.0.jar
+    java -jar eg.jooby.simple-1.0.0.jar
+
+Or:
+
+    java -jar eg.jooby.rest-1.0.0.jar
+
