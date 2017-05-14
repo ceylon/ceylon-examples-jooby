@@ -10,6 +10,10 @@ with Ceylon.
 This project requires JDK 8 and [Ceylon] 1.3.2 or Ceylon IDE 
 1.3.2 for IntelliJ or Eclipse.
 
+To build and run the example from the command line, you do 
+*not* need to install Ceylon, since the `ceylonb` command is
+self-installing.
+
 [Ceylon]: https://ceylon-lang.org/download
 
 ## Compiling the examples
@@ -17,13 +21,13 @@ This project requires JDK 8 and [Ceylon] 1.3.2 or Ceylon IDE
 To compile the examples, either import this project into 
 Ceylon IDE, or, in this directory, type:
 
-    ceylon compile
+    ./ceylonb compile
 
 ## Running the examples
 
 To run the Hello World example, in this directory, type:
 
-    ceylon run eg.jooby
+    ./ceylonb run eg.jooby
 
 And go to <http://localhost:8080>.
 
@@ -31,7 +35,7 @@ And go to <http://localhost:8080>.
 
 To assemble a "fat" jar, in this directory, type:
 
-    ceylon fat-jar --force eg.jooby
+    ./ceylonb fat-jar --force eg.jooby
 
 Then, to run the resulting jar with `java`, type:
 
