@@ -1,3 +1,6 @@
+import java.util {
+    Optional
+}
 import java.util.concurrent.atomic {
     AtomicInteger
 }
@@ -23,28 +26,20 @@ class App() extends Jooby() {
 path { "/mvc" }
 shared class Greetings() {
 
-    get path { "/greeting" }
-    shared Greeting helloWorld() => Greeting();
-
-    get path { "/greeting/:name" }
-    shared Greeting hello(String name) => Greeting(name);
+    get path { "/greeting", "/greeting/:name" }
+    shared Greeting hello(Optional<String> name)
+            => Greeting(name.orElse("World"));
 
 }
 
-shared class Greeting {
+AtomicInteger idgen = AtomicInteger();
 
-    static value idgen = AtomicInteger();
+shared class Greeting(name) {
 
-    shared Integer id;
+    shared Integer id = idgen.incrementAndGet();
     shared String name;
-
     shared String salutation = "Hello";
 
-    shared new (String name = "World") {
-        this.id = idgen.incrementAndGet();
-        this.name = name;
-    }
-
-    string => name;
+    string => salutation + " " + name;
 
 }
