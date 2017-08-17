@@ -7,8 +7,8 @@ with Ceylon.
 
 ## Requirements
 
-This project requires JDK 8 and [Ceylon] 1.3.2 or Ceylon IDE 
-1.3.2 for IntelliJ or Eclipse.
+This project requires JDK 8 and [Ceylon] 1.3.3 or Ceylon IDE 
+1.3.3 for IntelliJ or Eclipse.
 
 To build and run the example from the command line, you do 
 *not* need to install Ceylon, since the `ceylonb` command is
@@ -55,3 +55,19 @@ Or:
 
     java -jar eg.jooby.rest-1.0.0.jar
 
+## Assembling and running a Ceylon assembly
+
+To assemble a Ceylon assembly archive, type:
+
+    ./ceylonb assemble --force eg.jooby.simple
+Or:
+
+    ./ceylonb assemble --force eg.jooby.rest
+
+Then run it using:
+
+    ./ceylonb run -a eg.jooby.simple-1.0.0.cas
+
+Or:
+
+    ./ceylonb run -a eg.jooby.rest-1.0.0.cas
