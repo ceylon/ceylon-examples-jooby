@@ -22,8 +22,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: aopalliance:aopalliance/1.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.html/1.3.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.language/1.3.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.html/1.3.3" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Ceylon: ceylon.language/1.3.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: ch.qos.logback:logback-classic/1.1.7" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: ch.qos.logback:logback-core/1.1.7" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Ceylon: com.fasterxml.jackson.core:jackson-annotations/2.8.0" level="project" />
